@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(70, 115, 184, 0.18), transparent 35%),
+    linear-gradient(180deg, #08111f, #0d1627 45%, #111f35);
+  color: #eef6ff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}

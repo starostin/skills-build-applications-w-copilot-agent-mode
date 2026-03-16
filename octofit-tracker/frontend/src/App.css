@@ -1,0 +1,202 @@
+.app-shell {
+  min-height: 100vh;
+  padding: 2rem clamp(1rem, 3vw, 2.5rem) 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, #1a2a6c 0%, #b21f1f 50%, #fdbb2d 100%);
+  color: #f5f7fa;
+}
+
+.hero-banner {
+  padding: clamp(1.5rem, 5vw, 3rem);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 199, 95, 0.32), transparent 28%),
+    linear-gradient(135deg, #ff8f5a 0%, #ffc75f 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 60px rgba(7, 13, 24, 0.32);
+}
+
+.eyebrow,
+.section-kicker {
+  margin: 0 0 0.5rem;
+  color: #b21f1f;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero-banner h1,
+.data-panel h2,
+.info-card h3 {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  letter-spacing: -0.03em;
+  color: #1a2a6c;
+}
+
+.hero-banner h1 {
+  max-width: 12ch;
+  font-size: clamp(2.4rem, 6vw, 4.6rem);
+  line-height: 0.95;
+  color: #b21f1f;
+}
+
+.hero-copy {
+  max-width: 60ch;
+  margin: 1rem 0 0;
+  color: #1a2a6c;
+  font-size: 1.05rem;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  background: linear-gradient(90deg, #1a2a6c 0%, #b21f1f 100%);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+}
+
+.nav-link {
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  color: #fdbb2d;
+  text-decoration: none;
+  background: rgba(26, 42, 108, 0.15);
+  border: 1px solid #b21f1f;
+  transition: transform 150ms ease, border-color 150ms ease, background 150ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: #ffc75f;
+  transform: translateY(-1px);
+  border-color: #ffc75f;
+  background: #b21f1f;
+}
+
+.nav-link.active {
+  color: #fff;
+  background: linear-gradient(135deg, #b21f1f, #ffc75f);
+}
+
+.content-shell {
+  display: grid;
+}
+
+.data-panel {
+  padding: 1.5rem;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #fdbb2d 0%, #ff8f5a 100%);
+  border: 1px solid #b21f1f;
+  box-shadow: 0 24px 48px rgba(7, 13, 24, 0.24);
+  color: #1a2a6c;
+}
+
+.panel-heading,
+.card-topline,
+.meta-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.panel-heading {
+  margin-bottom: 1.25rem;
+}
+
+.item-count,
+.difficulty-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: #b21f1f;
+  color: #ffc75f;
+  font-size: 0.88rem;
+}
+
+.info-card {
+  padding: 1.25rem;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #1a2a6c 0%, #b21f1f 100%);
+  border: 1px solid #ffc75f;
+  color: #f5f7fa;
+}
+
+.card-copy {
+  color: #ffc75f;
+}
+
+.status-message {
+  margin: 0;
+  color: #b21f1f;
+}
+
+.error-message {
+  color: #b21f1f;
+  background: #ffc75f;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.meta-grid {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: #b21f1f;
+}
+
+.table {
+  --bs-table-bg: #ffc75f;
+  --bs-table-striped-bg: #ff8f5a;
+  --bs-table-hover-bg: #b21f1f;
+  --bs-table-color: #1a2a6c;
+  --bs-table-border-color: #b21f1f;
+}
+/* Logo styles */
+.octofit-logo {
+  height: 48px;
+  width: auto;
+  margin-right: 1rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+/* Button styles */
+.btn-custom {
+  background: linear-gradient(135deg, #b21f1f 0%, #ffc75f 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.5rem;
+  font-weight: bold;
+  transition: background 150ms ease, color 150ms ease;
+}
+.btn-custom:hover {
+  background: #ffc75f;
+  color: #b21f1f;
+}
+/* Link styles */
+a {
+  color: #b21f1f;
+  text-decoration: underline;
+  transition: color 150ms ease;
+}
+a:hover {
+  color: #ffc75f;
+}
+
+@media (max-width: 768px) {
+  .app-shell {
+    padding-inline: 1rem;
+  }
+
+  .panel-heading,
+  .card-topline {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
