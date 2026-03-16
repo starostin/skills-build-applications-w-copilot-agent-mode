@@ -31,3 +31,7 @@ yarn-error.log*
 # Python files
 *.pyc
 __pycache__/
+
+# OctoFit backend generated artifacts
+octofit-tracker/backend/.mongodb-bin/
+octofit-tracker/backend/db.sqlite3
